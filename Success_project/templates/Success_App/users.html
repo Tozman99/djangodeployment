@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>users</title>
+</head>
+<body>
+    <h1>Hey here are the newest sign in </h1>
+
+{%if users %}
+
+{%for person in users %}
+
+<ul>
+    <li>Infos: </li>
+    <li>first Name: {{person.first_name}}</li>
+    <li>last Name: {{person.last_name}}</li>
+    <li>Email : {{person.email}}</li>
+</ul>
+
+{%endfor%}
+
+
+{%endif%}
+
+</body>
+</html>

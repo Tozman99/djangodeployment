@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Success forms</title>
+</head>
+<body>
+    <h1>This is the Forms page</h1>
+    
+    <form method = 'POST' >
+        {{form.as_p}}
+        {%csrf_token%}
+        <input type="submit" class='btn btn-primary' value = 'submit'>
+
+
+
+    </form>
+    
+</body>
+</html>
